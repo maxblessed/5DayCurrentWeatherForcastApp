@@ -1,5 +1,6 @@
 #5 DAY WEATHER FORCAST APP
 ___
+< Javascript project
 ...
 * These app display 5 day current weather forcast of more than 100 city
 
@@ -9,4 +10,4 @@ ___
 * These app also display hourly forcast of current weather and a graph to display the temperature hourly
 * You will need open weather api key for these app to work
 
-[Current Weather Forcast](https://weatherforcastapp.netlify.com)
+Click to view site [Current Weather Forcast](https://weatherforcastapp.netlify.com)
