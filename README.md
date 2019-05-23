@@ -7,5 +7,6 @@ ___
 
 
 * These app also display hourly forcast of current weather and a graph to display the temperature hourly
+* You will need open weather api key for these app to work
 
 [Current Weather Forcast](https://weatherforcastapp.netlify.com)
