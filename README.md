@@ -1,7 +1,7 @@
 #5 DAY WEATHER FORCAST APP
 ___
 ...
-*These app display 5 day current weather forcast of more than 100 city
+* These app display 5 day current weather forcast of more than 100 city
 
 *you can search for the city with a search icon that display the search input
 
