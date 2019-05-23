@@ -1,0 +1,378 @@
+*{
+    padding: 0em;
+    margin: 0em;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(247, 244, 244);
+    
+}
+body{
+    background-image: url('https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#container{
+    display:grid;
+    grid-template-rows:10vh 150vh;
+    background-color: rgba(13, 5, 94, 0.1);
+    width: 100%;
+}
+#container #header{
+    background-color: rgba(4, 2, 49, 1);
+    padding-top: 1em;
+    padding-right: 1em;
+    
+}
+#container #header #logo{
+    float: left;
+    height:3em ;
+    padding: 0.2em 0.2em 0.2em 0.8em;
+    font-size: 1.9em;
+}
+#container #header #logo #menu{
+display: none;
+}
+#container #header #searchcont{
+    float: right;
+}
+#container #header #searchcont input::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+#container #header #searchcont input{
+    padding: 0.2em 0.2em 0.2em 0.8em;
+    color:rgb(253, 251, 251);
+    background-color: rgb(23, 25, 77);
+    height:3em ;
+    width:20em;
+}
+#container #header #searchcont button{
+    color:rgb(250, 244, 244);
+    background-color: rgb(23, 25, 77);
+    padding: 0.2em 0.2em 0.2em 0.8em;
+    height:3em ;
+    width: 8em;
+    font-size: 0.8em;
+    transition: background-color 300ms linear,color 300ms linear;
+}
+#container #header #searchcont button:hover{
+    background-color:rgb(255, 247, 247);
+    color:  rgb(3, 5, 66);
+    font-weight: bold;
+}
+
+#main{
+    height: 40vh;
+    width:50vw;
+    margin: 0.9em auto 0em auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+}
+#main #todayw div img{
+    width:100%;
+}
+#main #todayw h2{
+    padding: 10% 0% 0% 0%;
+    font-size: 3.9em;
+    text-align: left;
+   position: relative; 
+}
+
+#main #time{
+    padding-top: 0.2em;
+}
+#main #humidity{
+    display:grid;
+    grid-template-columns: repeat(3,25%);
+    justify-content: center;
+    padding-top: 0.5em;
+    position: relative; 
+}
+#main #todayw{
+    display:grid;
+    grid-template-columns: 20% 40%;
+    justify-content: center;
+    position: relative; 
+}
+#weather{
+    display:grid;
+    grid-template-rows:10vh 40vh 10vh 90vh 10vh;
+    width:90%;
+    background-color: rgba(11, 4, 114, 0.3);
+    margin: 0 auto;
+    position: relative;
+    line-height: 7vh;
+}
+#container #weather #five{
+    display:grid;
+    grid-template-columns:repeat(5,17%);
+    grid-column-gap: 1%;
+    justify-content: center;
+    background-color: rgba(6, 4, 136, 0.3);
+}
+#container #weather #five .div{
+    position: relative;
+    text-align: center;
+    transition: all 0.1s linear;
+    background-color: rgba(2, 7, 58,0.2);
+}
+#container #weather #five .div:hover{
+/* background-color: rgba(4, 2, 49, 0.8); */
+ box-sizing: border-box;
+ border:0.1em solid rgb(253, 251, 251);
+}
+
+#container #weather #five .specialClass{
+    background-color: rgba(4, 2, 49, 0.8);
+}
+
+#container #weather #Hourly{
+    background-color: rgba(19, 4, 90, 0.7); 
+    text-align: center;
+}
+#container #weather #Hourly #canvas{
+    width:100%;
+    height:80%;
+    position: relative; 
+    
+}
+#imgupdatecont{
+    display:grid;
+    grid-template-columns: repeat(7,13%);
+    justify-content: center;
+}
+#weatherupdate{
+    display:grid;
+    grid-template-columns: repeat(7,13%);
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
+}
+#developer{
+    background-color: rgba(4, 2, 49, 1);
+    position: relative; 
+    height:100%;
+    padding-top: 1em;
+}
+@media only screen and (max-width: 1200px) {
+
+    #container #header{
+        padding-top: 2.8em;
+    }
+    #container #weather #five .div::after{
+        bottom: -3%;
+    }
+    #main{
+        padding-top: 8em;
+        
+    }
+    #main #todayw h2{
+        font-size: 3.3em;
+        width: 100%;
+    }
+    #weather{
+        grid-template-rows:10vh 40vh 10vh 50vh 10vh;
+    }
+    #weather #Hourly #canvas{
+        max-height:30vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+  
+  #container #header{
+    padding-top: 1.8em;
+}
+
+#main{
+    padding-top: 5em;
+}
+#main #todayw h2{
+    font-size: 2.6em;
+    width: 100%;
+}
+#weather{
+    grid-template-rows:10vh 40vh 10vh 55vh 10vh;
+}
+#weatherupdate{
+    
+    grid-template-columns: repeat(7,14%);
+}
+#weatherupdate div{
+    background-color: rgba(84, 74, 148,0.2);
+    width: 100%;
+}
+}
+@media only screen and (max-width: 414px){
+   
+    #containe{
+        display:grid;
+    }
+    #container #header{
+        text-align: center;
+        padding-top: 0.5em;
+    }
+    #container #header #logo{
+        font-size: 1.3em;
+        float: none;
+    }
+    #container #header #logo #menu{
+       display:flex;
+       font-size: 1.3em;
+    }
+    #container #header #searchcont{
+        opacity: 0;
+        transition: opacity 500ms linear;
+        z-index: 1000;
+        position: relative;
+    }
+    #container #main{
+        padding-top: 1.3em;
+    }
+    #main #todayw h2{
+        font-size:1.8em;
+        width: 4em;
+    }
+    #main #current{
+        font-size:1.4em;
+    }
+    #main #humidity{
+        justify-content: center;
+        display:block;
+    }
+    #container #weather{
+        display: block;
+        margin-top: 1em;
+    }
+    #container #weather h3{
+        height:10vh;
+        position: relative;
+    }
+    #container #weather #five{
+        display:block;
+        height: 193vh;
+        
+    }
+    #container #weather #five .div{
+        height: 36vh;
+        margin-top: 1em;
+    }
+    #container #weather #five .div::after{
+        display: none;
+    }
+    #container #weather #Hourly{
+        height: 60vh;
+    }
+    #weatherupdate{
+        font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 360px){
+   
+   
+    #container #header{
+        text-align: center;
+        padding-top: 0.5em;
+    }
+    #container #header #logo{
+        font-size: 1.3em;
+        float: none;
+    }
+    #main #todayw h2{
+        font-size:1.8em;
+        width: 4em;
+    }
+    #main{
+        padding-top: 0em;
+    }
+    #main #current{
+        font-size:1.4em;
+    }
+    #main #humidity{
+        justify-content: center;
+        display:block;
+    }
+    #container #weather{
+        display: block;
+        margin-top: 1em;
+    }
+    #container #weather h3{
+        height:10vh;
+        position: relative;
+    }
+    #container #weather #five{
+        display:block;
+        height: 193vh;
+        
+    }
+    #container #weather #five .div{
+        height: 36vh;
+        margin-top: 1em;
+    }
+    #container #weather #five .div::after{
+        display: none;
+    }
+    #container #weather #Hourly{
+        height: 60vh;
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 320px){
+   
+    #containe{
+        display:grid;
+    }
+    #container #header{
+        text-align: center;
+        padding-top: 0.5em;
+    }
+    #container #header #logo{
+        font-size: 1.3em;
+        float: none;
+    }
+    #container #main{
+        padding-top: 0.3em;
+        font-size:0.9em;
+    }
+    #main #todayw h2{
+        font-size:1.8em;
+        width: 4em;
+    }
+    #main #current{
+        font-size:1.4em;
+    }
+    #main #humidity{
+        justify-content: center;
+        display:block;
+    }
+    #container #weather{
+        display: block;
+        margin-top: 1em;
+    }
+    #container #weather h3{
+        height:10vh;
+        position: relative;
+    }
+    #container #weather #five{
+        display:block;
+        height: 193vh;
+        
+    }
+    #container #weather #five .div{
+        height: 36vh;
+        margin-top: 1em;
+    }
+    #container #weather #five .div::after{
+        display: none;
+    }
+    #container #weather #Hourly{
+        height: 60vh;
+        
+    }
+    #container #header #logo #menu{
+        display:flex;
+        font-size: 1.3em;
+        margin-top: -0.9em;
+     }
+}
