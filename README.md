@@ -1,6 +1,6 @@
 #5 DAY WEATHER FORCAST APP
 ___
-> Javascript project
+>Javascript project
 ---
 ...
 * These app display 5 day current weather forcast of more than 100 city
